@@ -1,0 +1,111 @@
+getwd()
+setwd("C:/Users/Arnold Bautista/Desktop/DMC 2018/trabajar en r")
+datos = read.csv("1103JM.csv", dec=",", sep=";")
+#View(datos)
+
+No = datos[(11:37), 2]
+Estudiante = datos[(11:37), 4]
+
+# Ciencias políticas
+P1_C.Pol = datos[(11:37), 11]
+P2_C.Pol = datos[(11:37), 13]
+P3_C.Pol = datos[(11:37), 14]
+P4_C.Pol = datos[(11:37), 16]
+PM_C.Pol = datos[(11:37), 22]
+
+# Física
+P1_Fis = datos[(11:37), 24]
+P2_Fis = datos[(11:37), 25]
+P3_Fis = datos[(11:37), 26]
+P4_Fis = datos[(11:37), 17]
+PM_Fis = datos[(11:37), 34]
+
+# Química
+P1_Qui = datos[(11:37), 37]
+P2_Qui = datos[(11:37), 38]
+P3_Qui = datos[(11:37), 39]
+P4_Qui = datos[(11:37), 40]
+PM_Qui = datos[(11:37), 44]
+
+# Ciencias sociales
+P1_C.Soc = datos[(11:37), 46]
+P2_C.Soc = datos[(11:37), 47]
+P3_C.Soc = datos[(11:37), 48]
+P4_C.Soc = datos[(11:37), 49]
+PM_C.Soc = datos[(11:37), 53]
+
+# Comportamiento
+P1_Com = datos[(11:37), 55]
+P2_Com = datos[(11:37), 56]
+P3_Com = datos[(11:37), 57]
+P4_Com = datos[(11:37), 58]
+PM_Com = datos[(11:37), 62]
+
+# Artes
+P1_Art = datos[(11:37), 64]
+P2_Art = datos[(11:37), 65]
+P3_Art = datos[(11:37), 66]
+P4_Art = datos[(11:37), 67]
+PM_Art = datos[(11:37), 71]
+
+# Ética
+P1_Eti = datos[(11:37), 73]
+P2_Eti = datos[(11:37), 74]
+P3_Eti = datos[(11:37), 75]
+P4_Eti = datos[(11:37), 76]
+PM_Eti = datos[(11:37), 80]
+
+# Educación física
+P1_E.Fis = datos[(11:37), 82]
+P2_E.Fis = datos[(11:37), 83]
+P3_E.Fis = datos[(11:37), 84]
+P4_E.Fis = datos[(11:37), 85]
+PM_E.Fis = datos[(11:37), 89]
+
+# Religión
+P1_Rel = datos[(11:37), 91]
+P2_Rel = datos[(11:37), 92]
+P3_Rel = datos[(11:37), 93]
+P4_Rel = datos[(11:37), 94]
+PM_Rel = datos[(11:37), 98]
+
+# Filosofía
+P1_Fil = datos[(11:37), 100]
+P2_Fil = datos[(11:37), 101]
+P3_Fil = datos[(11:37), 102]
+P4_Fil = datos[(11:37), 103]
+PM_Fil = datos[(11:37), 107]
+
+# Ingles
+P1_Ing = datos[(11:37), 109]
+P2_Ing = datos[(11:37), 110]
+P3_Ing = datos[(11:37), 111]
+P4_Ing = datos[(11:37), 112]
+PM_Ing = datos[(11:37), 116]
+
+# Español
+P1_Esp = datos[(11:37), 118]
+P2_Esp = datos[(11:37), 119]
+P3_Esp = datos[(11:37), 120]
+P4_Esp = datos[(11:37), 121]
+PM_Esp = datos[(11:37), 125]
+
+# Cálculo
+P1_Cal = datos[(11:37), 127]
+P2_Cal = datos[(11:37), 128]
+P3_Cal = datos[(11:37), 129]
+P4_Cal = datos[(11:37), 130]
+PM_Cal = datos[(11:37), 134]
+
+# Tecnología
+P1_Tec = datos[(11:37), 136]
+P2_Tec = datos[(11:37), 137]
+P3_Tec = datos[(11:37), 138]
+P4_Tec = datos[(11:37), 139]
+PM_Tec = datos[(11:37), 143]
+
+Perdidas = rep(0, 27)
+
+base = data.frame(No, Estudiante, Perdidas, PM_C.Pol, PM_Fis, PM_Qui, PM_C.Soc, PM_Com, PM_Art, PM_Eti, PM_E.Fis, PM_Rel, PM_Fil, PM_Ing, PM_Esp, PM_Cal, PM_Tec)
+
+View(base)
